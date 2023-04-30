@@ -6,7 +6,11 @@ metadata:
   labels: 
     app: nginx
 spec:
+  type: NodePort
+  selector:
+    app.kubernetes.io/name: nginx
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 9376
+      targetPort: 80
+      nodePort: 31755
