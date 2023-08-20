@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: my-service
   namespace: argo
-  label: nginx
 spec:
   ports:
     - protocol: TCP
